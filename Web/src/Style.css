@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.body {
+  height: 100vh;
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  color: white;
+}
+
+.open-login-button {
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  margin: 20px;
+  color: white;
+  background-color: #000000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  background-color: rgb(255, 255, 255);
+  width: 40vw; 
+  max-width: 400px; 
+  height: auto;
+  min-height: 350px; 
+  padding: 30px; 
+  border-radius: 20px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333; 
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  text-align: center;
+  color: #666; 
+  margin-bottom: 25px;
+  font-size: 0.95em;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.modal-close-button:hover {
+  color: #777;
+}
+
+.container-form {
+  background-color: rgb(255, 255, 255);
+  width: 40vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  border: none;
+  border-radius: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario input {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.formulario input::placeholder {
+  color: black;
+  text-align: center;
+}
+
+.enviar {
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.enviar:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 5px #2a2e345f;
+  color: #000000;
+}
+
+
+
+.container-form p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7e00a4;
+}
+
+.signup {
+  width: 70px;
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: #000000;
+}
+
+.signup:hover {
+  background: #000000;
+  color: white;
+  font-size: 0.9rem;
+}
